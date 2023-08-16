@@ -1,1 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Dice</title>
+		<link rel="stylesheet" href="dice.css">
+		<script src="dice.js" defer></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="plate">
+				<div class="cube first"></div>
+			</div>
+		</div>
+			
+			<label>
+				<input type="range" name="numDice" min="1" max="3" value="2">
+			</label>
+
+			<label>
+				<input type="checkbox" name="sound" checked>
+			</label>
+		
+			<div id="fullscreenArea">
+				<div id="sceneArea">
+					<section id="scene" data-roll-count-mod5="0" data-number-style="dots" data-dice-num="2">
+						<div class="diePad">
+							<div class="die" data-result="1">
+								<div class="face face-1">
+									<span>1</span>
+									<svg viewBox="0 0 4 4">
+										<circle r="0.4" cx="2" cy="2" />
+									</svg>
+								</div>
+								
+								<div class="face face-2">
+									<span>2</span>
+									<svg viewBox="0 0 4 4">
+										<circle r="0.4" cx="3" cy="1" />
+										<circle r="0.4" cx="1" cy="3" />
+									</svg>
+								</div>
+
+								<div class="face face-3">
+									<span>3</span>
+									<svg viewBox="0 0 4 4">
+										<circle r="0.4" cx="3" cy="1" />
+										<circle r="0.4" cx="2" cy="2" />
+										<circle r="0.4" cx="1" cy="3" />
+									</svg>
+								</div>
+
+								<div class="face face-4">
+									<span>4</span>
+									<svg viewBox="0 0 4 4">
+										<circle r="0.4" cx="1" cy="1" />
+										<circle r="0.4" cx="3" cy="1" />
+										<circle r="0.4" cx="1" cy="3" />
+										<circle r="0.4" cx="3" cy="3" />
+									</svg>
+								</div>
+
+								<div class="face face-5">
+									<span>5</span>
+									<svg viewBox="0 0 4 4">
+										<circle r="0.4" cx="1" cy="1" />
+										<circle r="0.4" cx="3" cy="1" />
+										<circle r="0.4" cx="2" cy="2" />
+										<circle r="0.4" cx="1" cy="3" />
+										<circle r="0.4" cx="3" cy="3" />
+									</svg>
+								</div>
+
+								<div class="face face-6">
+									<span>6</span>
+									<svg viewBox="0 0 4 4">
+										<circle r="0.4" cx="1" cy="1" />
+										<circle r="0.4" cx="3" cy="1" />
+										<circle r="0.4" cx="1" cy="2" />
+										<circle r="0.4" cx="3" cy="2" />
+										<circle r="0.4" cx="1" cy="3" />
+										<circle r="0.4" cx="3" cy="3" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+	</body>
+</html>
+
 
